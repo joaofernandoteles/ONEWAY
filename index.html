@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE WAY</title>
+    <style>
+        .div_1 {}
+
+        .section_home img {
+            width: 100%;
+        }
+
+        body {
+            background-color: #e6dedc;
+            margin: 0px;
+        }
+
+        .botao {
+            position: absolute;
+            /* top: 146px; */
+            left: 22%;
+            bottom: 22%;
+            color: white;
+            background: rgb(0 109 255);
+            padding: 5px;
+            width: 235px;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .save_date {
+            height: 190px;
+            width: 90%;
+            left: 5%;
+            bottom: -43%;
+            position: absolute;
+            /* top: 146px; */
+            color: white;
+            background: rgb(42 123 223 / 74%);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15.5px);
+            -webkit-backdrop-filter: blur(15.5px);
+            border: 1px solid rgb(42 123 223 / 74%);
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .save_date img {
+            width: 450px;
+        }
+
+        .section_date {
+            height: 500px;
+            background-color: black;
+            margin-top: -5px;
+        }
+
+        .texto_info {
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .ingresso {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .ingresso img {
+            width: 230px;
+        }
+
+        .class_valores {
+            position: absolute;
+            top: 129%;
+            width: 100%;
+            height: 429px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titulo {
+            font-family: 'Arial', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: center;
+            background: linear-gradient(to right, #ffffff, #dcdcdc);
+            /* ajuste para simular o brilho */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .class_garanta {
+            height: 27px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        :root {
+            --e-transform-duration: 0.4s;
+        }
+
+        .elemento {
+            transition:
+                background 0.3s,
+                border 0.3s,
+                border-radius 0.3s,
+                box-shadow 0.3s,
+                transform var(--e-transform-duration, 0.4s);
+            transform-origin: center center;
+            /* Garante que o giro é a partir do centro real */
+            display: inline-block;
+        }
+
+        .elemento:hover {
+            transform: rotate(5deg) scale(1.05);
+            /* Gira no centro e dá uma leve aumentada */
+            /* Move na diagonal */
+        }
+
+        @keyframes girarDiagonal {
+            0% {
+                transform: rotate(0deg) translate(0, 0);
+            }
+
+            50% {
+                transform: rotate(5deg) scale(1.05);
+            }
+
+            100% {
+                transform: rotate(0deg) translate(0, 0);
+            }
+        }
+
+        .elemento-continuo {
+            animation: girarDiagonal 2s ease-in-out infinite;
+            transform-origin: center;
+            display: inline-block;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section_home">
+
+        <div style="position: relative; display: inline-block; width:100%">
+            <img src="./img/ONE WAY.jpg" alt="Minha imagem" style="width: 100%; display: block;">
+            <a href="#minha-secao">
+                <div class="botao">
+                    INSCREVASSE JÁ!
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="section_date">
+
+        <div style="position: relative; display: inline-block; width: 100%; height: 105px;">
+            <img style="width: 100%;" src="./img/fundo_ingresso.png" alt="">
+            <div class="save_date">
+                <div class="texto_info">
+                    <img src="./img/Design sem nome (8).png" alt="">
+                </div>
+                <div class="texto_info">
+                    <p>31 DE JULHO À 02 DE AGOSTO</p>
+                </div>
+                <div class="texto_info">
+                    <p style="padding: 25px; text-align: center;">
+                        NA IGREJA MEVAM EM FRANCA
+                    </p>
+                </div>
+                <section id="minha-secao" class="class_valores">
+                    <div . class="class_garanta">
+                        <h2 class="titulo">Garanta seu ingresso agora:</h2>
+                    </div>
+                    <div class="ingresso">
+                        <div class="elemento" style="padding: 20px;">
+                            <a href="">
+                                <img src="./img/ingressos/1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="elemento-continuo" style="padding: 20px;">
+                            <a href="">
+                                <img src="./img/ingressos/2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="elemento" style="padding: 20px;">
+                            <a href="">
+                                <img src="./img/ingressos/3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="elemento" style="padding: 20px;">
+                            <a href="">
+                                <img src="./img/ingressos/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </section>
+    <section style="">
+        <div style=" background-image: url(./img/PAGE\ -\ ONE\ WAY.png)
+            ; background-size:
+            cover; background-position: center top;     width: 100%;
+            min-height: 629px">
+
+        </div>
+    </section>
+    <section style="height: 500px;">
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
