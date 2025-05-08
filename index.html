@@ -149,6 +149,7 @@
             transform-origin: center center;
             /* Garante que o giro é a partir do centro real */
             display: inline-block;
+            padding: 20px;
         }
 
         .elemento:hover {
@@ -175,6 +176,7 @@
             animation: girarDiagonal 2s ease-in-out infinite;
             transform-origin: center;
             display: inline-block;
+            padding: 20px;
         }
 
         html {
@@ -283,6 +285,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                width: 100%;
             }
 
             #id_imagem_save {
@@ -333,6 +336,16 @@
             .ingresso img {
                 width: 150px;
             }
+
+            .elemento{
+                padding: 0px;
+                padding-top: 20px;
+
+            }
+            .elemento-continuo{
+                padding: 0px;
+                padding-top: 20px;
+            }
         }
     </style>
 </head>
@@ -377,12 +390,12 @@
                     <div class="ingresso">
 
                         <div class="ingresso1">
-                            <div class="elemento" style="padding: 20px;">
+                            <div class="elemento">
                                 <a href="">
                                     <img src="./img/ingressos/1.png" alt="">
                                 </a>
                             </div>
-                            <div class="elemento-continuo" style="padding: 20px;">
+                            <div class="elemento-continuo">
                                 <a href="">
                                     <img src="./img/ingressos/2.png" alt="">
                                 </a>
@@ -391,12 +404,12 @@
 
 
                         <div class="ingresso2">
-                            <div class="elemento" style="padding: 20px;">
+                            <div class="elemento">
                                 <a href="">
                                     <img src="./img/ingressos/3.png" alt="">
                                 </a>
                             </div>
-                            <div class="elemento" style="padding: 20px;">
+                            <div class="elemento">
                                 <a href="">
                                     <img src="./img/ingressos/4.png" alt="">
                                 </a>
