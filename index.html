@@ -81,6 +81,23 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .ingresso1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .ingresso2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
         }
 
         .ingresso img {
@@ -89,7 +106,7 @@
 
         .class_valores {
             position: absolute;
-            top: 129%;
+            top: 135%;
             width: 100%;
             height: 429px;
             display: flex;
@@ -111,7 +128,7 @@
         }
 
         .class_garanta {
-            height: 27px;
+            height: 85px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -173,6 +190,25 @@
             width: 100%;
         }
 
+        .box_save {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 105px;
+        }
+
+        .texto_save {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+
+        .texto_info {
+            text-align: center;
+        }
+
         /* Quando for celular */
         @media (max-width: 768px) {
             .img-mobile {
@@ -182,6 +218,120 @@
 
             .img-desktop {
                 display: none;
+            }
+
+            .botao {
+                position: absolute;
+                /* top: 146px; */
+                left: 5%;
+                bottom: 22%;
+                color: white;
+                background: rgb(0 109 255);
+                padding: 5px;
+                width: 190px;
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+
+            .save_date {
+                height: 460px;
+                width: 84%;
+                left: 6%;
+                bottom: -43%;
+                position: absolute;
+                /* top: 146px; */
+                color: white;
+                background: rgb(42 123 223 / 74%);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(15.5px);
+                -webkit-backdrop-filter: blur(15.5px);
+                border: 1px solid rgb(42 123 223 / 74%);
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 17px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+
+            .box_save {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 270px;
+            }
+
+            .save_date img {
+                width: 270px;
+            }
+
+            .texto_info {
+                font-size: 30px;
+                text-align: center;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #id_imagem_save {
+                height: 112px;
+                margin-bottom: 30px;
+            }
+
+            .texto_save {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .class_valores {
+                position: absolute;
+                top: 135%;
+                width: 100%;
+                height: 429px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section_date {
+                height: 1160px;
+                background-color: black;
+                margin-top: -5px;
+            }
+
+            .titulo {
+                font-size: 40px;
+            }
+
+            .class_garanta {
+                height: 180px;
+            }
+
+            .ingresso {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .ingresso img {
+                width: 150px;
             }
         }
     </style>
@@ -203,44 +353,54 @@
     </section>
     <section class="section_date">
 
-        <div style="position: relative; display: inline-block; width: 100%; height: 105px;">
+        <div class="box_save">
             <img style="width: 100%;" src="./img/fundo_ingresso.png" alt="">
             <div class="save_date">
-                <div class="texto_info">
+                <div class="texto_info" id="id_imagem_save">
                     <img src="./img/Design sem nome (8).png" alt="">
                 </div>
-                <div class="texto_info">
-                    <p>31 DE JULHO À 02 DE AGOSTO</p>
+                <div class="texto_save">
+                    <div class="texto_info">
+                        <p>31 DE JULHO À 02 DE AGOSTO</p>
+                    </div>
+                    <div class="texto_info">
+                        <p style="padding: 25px; text-align: center;">
+                            NA IGREJA MEVAM EM FRANCA
+                        </p>
+                    </div>
                 </div>
-                <div class="texto_info">
-                    <p style="padding: 25px; text-align: center;">
-                        NA IGREJA MEVAM EM FRANCA
-                    </p>
-                </div>
+
                 <section id="minha-secao" class="class_valores">
                     <div . class="class_garanta">
                         <h2 class="titulo">Garanta seu ingresso agora:</h2>
                     </div>
                     <div class="ingresso">
-                        <div class="elemento" style="padding: 20px;">
-                            <a href="">
-                                <img src="./img/ingressos/1.png" alt="">
-                            </a>
+
+                        <div class="ingresso1">
+                            <div class="elemento" style="padding: 20px;">
+                                <a href="">
+                                    <img src="./img/ingressos/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="elemento-continuo" style="padding: 20px;">
+                                <a href="">
+                                    <img src="./img/ingressos/2.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="elemento-continuo" style="padding: 20px;">
-                            <a href="">
-                                <img src="./img/ingressos/2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="elemento" style="padding: 20px;">
-                            <a href="">
-                                <img src="./img/ingressos/3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="elemento" style="padding: 20px;">
-                            <a href="">
-                                <img src="./img/ingressos/4.png" alt="">
-                            </a>
+
+
+                        <div class="ingresso2">
+                            <div class="elemento" style="padding: 20px;">
+                                <a href="">
+                                    <img src="./img/ingressos/3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="elemento" style="padding: 20px;">
+                                <a href="">
+                                    <img src="./img/ingressos/4.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
