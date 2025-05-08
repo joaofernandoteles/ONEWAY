@@ -163,6 +163,27 @@
         html {
             scroll-behavior: smooth;
         }
+
+        .img-mobile {
+            display: none;
+        }
+
+        .img-desktop {
+            display: block;
+            width: 100%;
+        }
+
+        /* Quando for celular */
+        @media (max-width: 768px) {
+            .img-mobile {
+                display: block;
+                width: 100%;
+            }
+
+            .img-desktop {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -171,7 +192,8 @@
     <section class="section_home">
 
         <div style="position: relative; display: inline-block; width:100%">
-            <img src="./img/ONE WAY.jpg" alt="Minha imagem" style="width: 100%; display: block;">
+            <img class="img-desktop" src="./img/ONE WAY.jpg" alt="Minha imagem">
+            <img class="img-mobile" src="./img/site - vertical.png" alt="Minha imagem">
             <a href="#minha-secao">
                 <div class="botao">
                     INSCREVASSE JÁ!
