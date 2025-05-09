@@ -338,6 +338,30 @@ html {
   .saq {
     height: 1130px !important;
   }
+
+  .div_cel_sobre {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .div_cel_sobre img {
+    width: 140%;
+  }
+
+  .div_note_sobre {
+    display: none;
+  }
+
+  .div_sobre {
+    /* bottom: 21%; */
+    bottom: none !important;
+    position: absolute;
+    right: 8% !important;
+    width: 374px;
+    text-align: center;
+  }
 }
 
 .div_sobre {
@@ -432,4 +456,17 @@ html {
 
 .div_rodape img {
   width: 125px;
+}
+
+.div_cel_sobre {
+  display: none;
+}
+
+.div_note_sobre {
+  background-image: url(../img/PAGINA_ONEWAY.jpg);
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  min-height: 629px;
+  position: relative;
 }
