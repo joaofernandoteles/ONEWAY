@@ -5,349 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONE WAY</title>
-    <style>
-        .div_1 {}
 
-        .section_home img {
-            width: 100%;
-        }
-
-        body {
-            background-color: #e6dedc;
-            margin: 0px;
-        }
-
-        .botao {
-            position: absolute;
-            /* top: 146px; */
-            left: 22%;
-            bottom: 22%;
-            color: white;
-            background: rgb(0 109 255);
-            padding: 5px;
-            width: 235px;
-            height: 35px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            font-size: 17px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-
-        .save_date {
-            height: 190px;
-            width: 90%;
-            left: 5%;
-            bottom: -43%;
-            position: absolute;
-            /* top: 146px; */
-            color: white;
-            background: rgb(42 123 223 / 74%);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(15.5px);
-            -webkit-backdrop-filter: blur(15.5px);
-            border: 1px solid rgb(42 123 223 / 74%);
-            padding: 5px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 17px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-
-        .save_date img {
-            width: 450px;
-        }
-
-        .section_date {
-            height: 500px;
-            background-color: black;
-            margin-top: -5px;
-        }
-
-        .texto_info {
-            padding: 10px;
-            font-size: 30px;
-        }
-
-        .ingresso {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-
-        .ingresso1 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-
-        .ingresso2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-
-        .ingresso img {
-            width: 230px;
-        }
-
-        .class_valores {
-            position: absolute;
-            top: 135%;
-            width: 100%;
-            height: 429px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .titulo {
-            font-family: 'Arial', sans-serif;
-            font-weight: bolder;
-            text-transform: uppercase;
-            font-size: 30px;
-            text-align: center;
-            background: linear-gradient(to right, #ffffff, #dcdcdc);
-            /* ajuste para simular o brilho */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .class_garanta {
-            height: 85px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-        :root {
-            --e-transform-duration: 0.4s;
-        }
-
-        .elemento {
-            transition:
-                background 0.3s,
-                border 0.3s,
-                border-radius 0.3s,
-                box-shadow 0.3s,
-                transform var(--e-transform-duration, 0.4s);
-            transform-origin: center center;
-            /* Garante que o giro é a partir do centro real */
-            display: inline-block;
-            padding: 20px;
-        }
-
-        .elemento:hover {
-            transform: rotate(5deg) scale(1.10);
-            /* Gira no centro e dá uma leve aumentada */
-            /* Move na diagonal */
-        }
-
-        @keyframes girarDiagonal {
-            0% {
-                transform: rotate(0deg) translate(0, 0);
-            }
-
-            50% {
-                transform: rotate(5deg) scale(1.10);
-            }
-
-            100% {
-                transform: rotate(0deg) translate(0, 0);
-            }
-        }
-
-        .elemento-continuo {
-            animation: girarDiagonal 1.5s ease-in-out infinite;
-            transform-origin: center;
-            display: inline-block;
-            padding: 20px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .img-mobile {
-            display: none;
-        }
-
-        .img-desktop {
-            display: block;
-            width: 100%;
-        }
-
-        .box_save {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            height: 105px;
-        }
-
-        .texto_save {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-
-
-        .texto_info {
-            text-align: center;
-        }
-
-        /* Quando for celular */
-        @media (max-width: 768px) {
-            .img-mobile {
-                display: block;
-                width: 100%;
-            }
-
-            .img-desktop {
-                display: none;
-            }
-
-            .botao {
-                position: absolute;
-                /* top: 146px; */
-                left: 5%;
-                bottom: 22%;
-                color: white;
-                background: rgb(0 109 255);
-                padding: 5px;
-                width: 190px;
-                height: 30px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                border-radius: 3px;
-                font-size: 15px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-            }
-
-            .save_date {
-                height: 460px;
-                width: 84%;
-                left: 6%;
-                bottom: -43%;
-                position: absolute;
-                /* top: 146px; */
-                color: white;
-                background: rgb(42 123 223 / 74%);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(15.5px);
-                -webkit-backdrop-filter: blur(15.5px);
-                border: 1px solid rgb(42 123 223 / 74%);
-                padding: 5px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                font-size: 17px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
-            }
-
-            .box_save {
-                position: relative;
-                display: inline-block;
-                width: 100%;
-                height: 270px;
-            }
-
-            .save_date img {
-                width: 270px;
-            }
-
-            .texto_info {
-                font-size: 30px;
-                text-align: center;
-                height: 120px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-            }
-
-            #id_imagem_save {
-                height: 112px;
-                margin-bottom: 30px;
-            }
-
-            .texto_save {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .class_valores {
-                position: absolute;
-                top: 135%;
-                width: 100%;
-                height: 429px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .section_date {
-                height: 1160px;
-                background-color: black;
-                margin-top: -5px;
-            }
-
-            .titulo {
-                font-size: 40px;
-            }
-
-            .class_garanta {
-                height: 180px;
-            }
-
-            .ingresso {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-            }
-
-            .ingresso img {
-                width: 150px;
-            }
-
-            .elemento{
-                padding: 0px;
-                padding-top: 20px;
-
-            }
-            .elemento-continuo{
-                padding: 0px;
-                padding-top: 20px;
-            }
-        }
-    </style>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="./Css/style.css">
 </head>
 
 <body>
@@ -421,19 +81,113 @@
 
         </div>
     </section>
-    <section style="">
-        <div style=" background-image: url(./img/PAGE\ -\ ONE\ WAY.png)
+    <section>
+        <div style=" background-image: url(./img/PAGINA_ONEWAY.jpg)
             ; background-size:
-            cover; background-position: center top;     width: 100%;
-            min-height: 629px">
+            cover; background-position: center top; width: 100%;
+            min-height: 629px; position: relative">
+
+            <div class="div_sobre">
+                <h1 id="texto_sobre">
+                    ONE WAY 2025
+                </h1>
+                <p id="texto_sobre">
+
+                    Cremos que Deus está levantando uma geração que não negocia o Caminho. Jovens apaixonados por Jesus,
+                    cheios do Espírito Santo, que desejam não apenas falar sobre Ele, mas se parecer com Ele — em
+                    caráter, em autoridade e em entrega.
+                </p>
+                <p id="texto_sobre">
+
+                    O One Way é mais do que um evento: é um ajuntamento de filhos que decidiram viver para construir um
+                    lugar de habitação para a Presença. Um povo que entende que há um único caminho, e que esse caminho
+                    é suficiente.
+                </p>
+                <p id="texto_sobre">
+
+                    Queremos, juntos, formar Cristo uns nos outros — para que a paixão pelo evangelho se transforme em
+                    missão, e a missão em frutos que permaneçam.
+                </p>
+                <p id="texto_sobre">
+
+                    Porque o mundo não precisa de mais entretenimento. Ele precisa de uma geração que conheça o Caminho.
+                </p>
+            </div>
 
         </div>
+
     </section>
-    <section style="height: 500px;">
-
-
+    <section class="saq">
+        <div class="faq-container">
+            <img src="./img/FAQ.png" alt="FAQ" class="faq-logo">
+            <div>
+                <div class="faq-item">
+                    <button class="faq-question active">▸ O evento conta com espaço kids?</button>
+                    <div class="faq-answer">Não, não teremos espaço kids na nossa conferência</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ O evento possui acessibilidade?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ A partir de quantos anos a criança paga ingresso?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ Hospedagem, alimentação e transporte estão inclusos no valor do
+                        evento?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ Qual o prazo máximo para solicitação de reembolso?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ Existe idade mínima ou máxima para participar do evento?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ O local do evento possui estacionamento próprio?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ Quais documentos eu apresento na hora do check-in</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">▸ Onde almoçar ou fazer um lanche durante intervalos?</button>
+                    <div class="faq-answer">Resposta aqui...</div>
+                </div>
+            </div>
         </div>
     </section>
+    <section>
+        <div class="div_rodape">
+            <img src="./img/rodape.png" alt="">
+        </div>
+    </section>
+
+    <script>
+        const buttons = document.querySelectorAll('.faq-question');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => {
+                    if (b !== btn) {
+                        b.classList.remove('active');
+                        b.nextElementSibling.classList.remove('show');
+                        b.innerText = b.innerText.replace('▴', '▸');
+                    }
+                });
+
+                btn.classList.toggle('active');
+                const answer = btn.nextElementSibling;
+                answer.classList.toggle('show');
+                btn.innerText = btn.classList.contains('active')
+                    ? btn.innerText.replace('▸', '▴')
+                    : btn.innerText.replace('▴', '▸');
+            });
+        });
+    </script>
 
 </body>
 
