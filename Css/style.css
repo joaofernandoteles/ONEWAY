@@ -365,7 +365,7 @@ html {
   }
 
   .texto_info p {
-    padding: 0px;
+    padding: 0px !important;
   }
 }
 
