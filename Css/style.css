@@ -363,6 +363,10 @@ html {
     width: 374px;
     text-align: center;
   }
+
+  .texto_info p {
+    padding: 0px;
+  }
 }
 
 .div_sobre {
@@ -464,7 +468,7 @@ html {
 }
 
 .div_note_sobre {
-  background-image: url(../img/PAGINA_ONEWAY.jpg);
+  background-image: url(../img/PAGINA_ONEWAY.png);
   background-size: cover;
   background-position: center top;
   width: 100%;
