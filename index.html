@@ -4,147 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE WAY</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="./img/2.png">
-
-    <!-- Link para o arquivo CSS -->
+    <title>ONE WAY 2025 - Evento Oficial</title>
     <link rel="stylesheet" type="text/css" href="./Css/style.css">
+    <link rel="icon" type="image/png" href="./img/2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+    <!-- Header com Navegação Fixa -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="#" class="logo">ONE WAY 2025</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#minha-secao" class="nav-link">Ingressos</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <section class="section_home">
-
+    <section id="home" class="section_home">
         <div style="position: relative; display: inline-block; width:100%">
-            <img class="img-desktop" src="./img/ONE WAY.jpg" alt="Minha imagem">
-            <img class="img-mobile" src="./img/site - vertical.png" alt="Minha imagem">
-            <a href="#minha-secao">
-                <div class="botao">
-                    INSCREVA-SE JÁ!
-                </div>
-            </a>
+            <img class="img-desktop" src="./img/One_Way_25-conv.png" alt="ONE WAY 2025 Banner" loading="eager" decoding="async">
+            <img class="img-mobile" src="./img/One_Way_25-conv.png" alt="ONE WAY 2025 Mobile Banner" loading="eager" decoding="async">
         </div>
     </section>
-    <section class="section_date">
-
-        <div class="box_save">
-            <img style="width: 100%;" src="./img/fundo_ingresso.png" alt="">
-            <div class="save_date">
-                <div class="texto_info" id="id_imagem_save">
-                    <img src="./img/Design sem nome (8).png" alt="">
-                </div>
-                <div class="texto_save">
-                    <div class="texto_info">
-                        <p>31 DE JULHO À 02 DE AGOSTO</p>
-                    </div>
-                    <div class="texto_info">
-                        <p style="padding: 25px; text-align: center;">
-                            NA IGREJA MEVAM EM FRANCA
-                        </p>
-                    </div>
-                </div>
-
-                <section id="minha-secao" class="class_valores">
-                    <div . class="class_garanta">
-                        <h2 class="titulo">Garanta seu ingresso agora:</h2>
-                    </div>
-                    <div class="ingresso">
-
-                        <div class="ingresso1">
-                            <div class="elemento">
-                                <a href="https://tiketo.com.br/evento/3063" style="display: none;">
-                                    <img src="./img/ingressos/LOTE1.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063">
-                                    <img src="./img/ingressos/LOTE1ESGOTADO.png" alt="">
-                                </a>
+    
+    <!-- Seção Combinada: Save the Date + Ingressos -->
+    <section id="minha-secao" class="section_date_tickets">
+        <div class="table-container">
+            <table class="date-tickets-table">
+                <tr>
+                    <!-- Coluna Esquerda: Informações de Data -->
+                    <td class="date-column">
+                        <div class="date-info-section">
+                            <div class="date-header">
+                                <h2>📅 Save the Date</h2>
                             </div>
-                            <div class="elemento">
-                                <a style="display: none;">
-                                    <img src="./img/ingressos/LOTE2APAGADO.png" alt="" >
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " style="display: none;">
-                                    <img src="./img/ingressos/LOTE2.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " >
-                                    <img src="./img/ingressos/LOTE2ESGOTADO.png" alt="">
-                                </a>
+                            <div class="date-details">
+                                <div class="date-main">
+                                    <span class="date-range">31 DE JULHO À 02 DE AGOSTO</span>
+                                    <span class="year">2025</span>
+                                </div>
+                                <div class="location-main">
+                                    <span class="venue">Igreja MEVAM</span>
+                                    <span class="city">Franca - SP</span>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div class="ingresso2">
-                            <div class="elemento-continuo">
-                                <a style="display: none;">
-                                    <img src="./img/ingressos/LOTE3APAGADO.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " >
-                                    <img src="./img/ingressos/LOTE3.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " style="display: none;">
-                                    <img src="./img/ingressos/LOTE3ESGOTADO.png" alt="">
-                                </a>
+                    </td>
+                    
+                    <!-- Coluna Direita: Opções de Ingressos -->
+                    <td class="tickets-column">
+                        <div class="tickets-info-section">
+                            <div class="tickets-header">
+                                <h2>Garanta seu ingresso</h2>
                             </div>
-                            <div class="elemento">
-                                <a style="">
-                                    <img src="./img/ingressos/LOTE4APAGADO.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " style="display: none;">
-                                    <img src="./img/ingressos/LOTE4.png" alt="">
-                                </a>
-                                <a href="https://tiketo.com.br/evento/3063 " style="display: none;">
-                                    <img src="./img/ingressos/LOTE4ESGOTADO.png" alt="">
-                                </a>
+                            <div class="tickets-options">
+                                <div class="ticket-option esgotado">
+                                    <div class="ticket-row">
+                                        <span class="lote-name">Lote 1</span>
+                                        <span class="status">ESGOTADO</span>
+                                        <span class="price">---</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-option esgotado">
+                                    <div class="ticket-row">
+                                        <span class="lote-name">Lote 2</span>
+                                        <span class="status">ESGOTADO</span>
+                                        <span class="price">---</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-option disponivel">
+                                    <div class="ticket-row">
+                                        <span class="lote-name">Lote 3</span>
+                                        <span class="status">DISPONÍVEL</span>
+                                        <span class="price">R$ 189,00</span>
+                                    </div>
+                                    <a href="https://tiketo.com.br/evento/3063" class="buy-btn">Comprar</a>
+                                </div>
+                                <!-- <div class="ticket-option disponivel">
+                                    <div class="ticket-row">
+                                        <span class="lote-name">Lote 4</span>
+                                        <span class="status">DISPONÍVEL</span>
+                                        <span class="price">R$ 219,00</span>
+                                    </div>
+                                    <a href="https://tiketo.com.br/evento/3063" class="buy-btn">Comprar</a>
+                                </div> -->
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
-    <section>
-        <div class="div_note_sobre">
 
-            <div class="div_sobre">
-                <h1 id="texto_sobre">
-                    ONE WAY 2025
-                </h1>
-                <p id="texto_sobre">
-
-                    Cremos que Deus está levantando uma geração que não negocia o Caminho. Jovens apaixonados por Jesus,
-                    cheios do Espírito Santo, que desejam não apenas falar sobre Ele, mas se parecer com Ele — em
-                    caráter, em autoridade e em entrega.
-                </p>
-                <p id="texto_sobre">
-
-                    O One Way é mais do que um evento: é um ajuntamento de filhos que decidiram viver para construir um
-                    lugar de habitação para a Presença. Um povo que entende que há um único caminho, e que esse caminho
-                    é suficiente.
-                </p>
-                <p id="texto_sobre">
-
-                    Queremos, juntos, formar Cristo uns nos outros — para que a paixão pelo evangelho se transforme em
-                    missão, e a missão em frutos que permaneçam.
-                </p>
-                <p id="texto_sobre">
-
-                    Porque o mundo não precisa de mais entretenimento. Ele precisa de uma geração que conheça o Caminho.
-                </p>
-            </div>
-
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="section_products">
+        <div class="products-container" id="products-container">
+            <!-- Produtos serão carregados dinamicamente via JavaScript -->
         </div>
-        <div class="div_cel_sobre">
-            <img src="./img/fundoteste.jpg" alt="">
+    </section>
+
+    <section id="sobre" class="convidados">
+        <div class="convidados__container">
+            <div class="convidados__content">
+                <h1 class="convidados__title">ONE WAY 2025</h1>
+                <div class="convidados__text">
+                    <p>Cremos que Deus está levantando uma geração que não negocia o Caminho. Jovens apaixonados por Jesus, cheios do Espírito Santo, que desejam não apenas falar sobre Ele, mas se parecer com Ele — em caráter, em autoridade e em entrega.</p>
+                    <p>O One Way é mais do que um evento: é um ajuntamento de filhos que decidiram viver para construir um lugar de habitação para a Presença. Um povo que entende que há um único caminho, e que esse caminho é suficiente.</p>
+                    <p>Queremos, juntos, formar Cristo uns nos outros — para que a paixão pelo evangelho se transforme em missão, e a missão em frutos que permaneçam.</p>
+                    <p>Porque o mundo não precisa de mais entretenimento. Ele precisa de uma geração que conheça o Caminho.</p>
+                </div>
+            </div>
+            <div class="convidados__image">
+                <img src="./img/fundoteste.jpg" alt="ONE WAY 2025" class="convidados__img" loading="lazy" decoding="async">
+            </div>
         </div>
 
     </section>
-    <section class="saq">
+    <section id="faq" class="saq">
         <div class="faq-container">
-            <img src="./img/FAQ.png" alt="FAQ" class="faq-logo">
-            <div>
+            <img src="./img/FAQ.png" alt="FAQ" class="faq-logo" loading="lazy" decoding="async">
+            <div class="faq-grid">
                 <div class="faq-item">
                     <button class="faq-question active">▸ Quem pode participar do evento? </button>
                     <div class="faq-answer">Todos os jovens e adolecentes são bem-vindos! O evento é aberto para quem
@@ -212,13 +201,45 @@
             </div>
         </div>
     </section>
+
+
     <section>
         <div class="div_rodape">
-            <img src="./img/rodape.png" alt="">
+            <img src="./img/rodape.png" alt="" loading="lazy" decoding="async">
         </div>
     </section>
 
     <script>
+        // Menu hambúrguer
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Navegação suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ functionality
         const buttons = document.querySelectorAll('.faq-question');
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -238,6 +259,209 @@
                     : btn.innerText.replace('▴', '▸');
             });
         });
+
+        // Função para comprar camiseta
+        function comprarCamiseta() {
+            const sizeSelected = document.querySelector('input[name="camiseta-size"]:checked');
+            if (sizeSelected) {
+                const size = sizeSelected.value;
+                window.open('https://buy.stripe.com/dRm4gz0bG2B96sFbtu18c00', '_blank');
+            } else {
+                alert('Por favor, selecione um tamanho antes de continuar.');
+            }
+        }
+
+        // Navbar transparente ao rolar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Auto-scroll do carrossel no mobile
+        function initCarousel() {
+            const container = document.querySelector('.products-container');
+            if (!container) return {};
+            
+            let isScrolling = false;
+            let currentIndex = 0;
+            const cards = document.querySelectorAll('.product-card');
+            let autoScrollInterval;
+            
+            function autoScroll() {
+                if (window.innerWidth <= 768 && !isScrolling) {
+                    currentIndex = (currentIndex + 1) % cards.length;
+                    const cardWidth = cards[0].offsetWidth + 15; // largura + gap
+                    container.scrollTo({
+                        left: currentIndex * cardWidth,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            
+            function stopAutoScroll() {
+                isScrolling = true;
+                clearInterval(autoScrollInterval);
+            }
+            
+            function restartAutoScroll() {
+                isScrolling = false;
+                clearInterval(autoScrollInterval);
+                autoScrollInterval = setInterval(autoScroll, 5000);
+            }
+            
+            // Auto-scroll a cada 3 segundos
+            autoScrollInterval = setInterval(autoScroll, 3000);
+            
+            // Pausar auto-scroll quando usuário interage com o container
+            container.addEventListener('touchstart', stopAutoScroll);
+            container.addEventListener('touchend', restartAutoScroll);
+            
+            // Detectar mudança de orientação/resize
+            window.addEventListener('resize', () => {
+                clearInterval(autoScrollInterval);
+                if (window.innerWidth <= 768) {
+                    autoScrollInterval = setInterval(autoScroll, 3000);
+                }
+            });
+            
+            // Retornar funções para uso externo
+            return {
+                stopAutoScroll,
+                restartAutoScroll
+            };
+        }
+        
+        // Funcionalidade dos botões de tamanho
+        function initSizeButtons() {
+            document.querySelectorAll('.size-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active de todos os botões do mesmo produto
+                    const parentSelector = this.closest('.size-selector');
+                    parentSelector.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+                    // Adiciona active no clicado
+                    this.classList.add('active');
+                    
+                    // Para o auto-scroll
+                    if (window.carousel && window.carousel.stopAutoScroll) {
+                        window.carousel.stopAutoScroll();
+                    }
+                });
+            });
+            
+            // Adicionar evento aos botões de comprar
+            document.querySelectorAll('.product-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Para o auto-scroll
+                    if (window.carousel && window.carousel.stopAutoScroll) {
+                        window.carousel.stopAutoScroll();
+                    }
+                    
+                    // Redirecionar para o site de compras
+                    window.open('https://tiketo.com.br/evento/3063', '_blank');
+                });
+            });
+        }
+
+        // Carregar produtos do JSON
+        async function loadProducts() {
+            try {
+                const response = await fetch('./products.json');
+                const data = await response.json();
+                
+                // Converter objeto em array e ordenar por ID
+                const productsArray = Object.values(data.products).sort((a, b) => parseInt(a.id) - parseInt(b.id));
+                
+                const container = document.getElementById('products-container');
+                container.innerHTML = '';
+                
+                productsArray.forEach(product => {
+                    const productHTML = `
+                        <div class="product-card" data-product-id="${product.id}">
+                            <div class="product-image">
+                                <img src="${product.image}" alt="${product.title}" loading="lazy" decoding="async">
+                            </div>
+                            <div class="product-info">
+                                <h3>${product.title}</h3>
+                                <div class="product-price">R$ ${product.price.toFixed(2).replace('.', ',')}</div>
+                                <div class="size-selector">
+                                    <div class="size-options">
+                                        ${Object.entries(product.sizes).map(([size, sizeData]) => {
+                                            const isAvailable = sizeData.available;
+                                            const isActive = size === 'M' && isAvailable;
+                                            const disabled = !isAvailable ? 'disabled' : '';
+                                            const activeClass = isActive ? 'active' : '';
+                                            return `<button class="size-btn ${activeClass}" data-size="${size}" data-stripe-link="${sizeData.stripe_link}" ${disabled}>${size}</button>`;
+                                        }).join('')}
+                                    </div>
+                                </div>
+                                <button class="product-btn" data-product-id="${product.id}">Comprar Agora</button>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += productHTML;
+                });
+                
+                // Reinicializar funcionalidades após carregar produtos
+                window.carousel = initCarousel();
+                initSizeButtons();
+                
+            } catch (error) {
+                console.error('Erro ao carregar produtos:', error);
+                // Fallback: mostrar mensagem de erro
+                document.getElementById('products-container').innerHTML = '<p>Erro ao carregar produtos. Tente novamente.</p>';
+            }
+        }
+
+        // Funcionalidade dos botões de tamanho (atualizada)
+        function initSizeButtons() {
+            document.querySelectorAll('.size-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (this.disabled) return;
+                    
+                    // Remove active de todos os botões do mesmo produto
+                    const parentSelector = this.closest('.size-selector');
+                    parentSelector.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+                    // Adiciona active no clicado
+                    this.classList.add('active');
+                    
+                    // Para o auto-scroll
+                    if (window.carousel && window.carousel.stopAutoScroll) {
+                        window.carousel.stopAutoScroll();
+                    }
+                });
+            });
+            
+            // Adicionar evento aos botões de comprar (atualizada)
+            document.querySelectorAll('.product-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Para o auto-scroll
+                    if (window.carousel && window.carousel.stopAutoScroll) {
+                        window.carousel.stopAutoScroll();
+                    }
+                    
+                    // Pegar tamanho selecionado
+                    const productCard = this.closest('.product-card');
+                    const selectedSizeBtn = productCard.querySelector('.size-btn.active');
+                    
+                    if (selectedSizeBtn && selectedSizeBtn.dataset.stripeLink && selectedSizeBtn.dataset.stripeLink !== 'null') {
+                        // Redirecionar para o link específico do Stripe em nova aba
+                        window.open(selectedSizeBtn.dataset.stripeLink, '_blank');
+                    } else {
+                        alert('Por favor, selecione um tamanho disponível.');
+                    }
+                });
+            });
+        }
+
+        // Inicializar quando página carregar
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts();
+        });
+
     </script>
 
 </body>
