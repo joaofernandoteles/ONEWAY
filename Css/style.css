@@ -1243,7 +1243,7 @@ img {
 }
 
 .product-btn {
-  background: #667eea;
+  background: #ff7a00;
   color: white;
   border: none;
   padding: 12px 16px;
@@ -1258,7 +1258,7 @@ img {
 }
 
 .product-btn:hover {
-  background: #5a67d8;
+  background: #e66a00;
   transform: translateY(-1px);
 }
 
@@ -1299,14 +1299,14 @@ img {
 }
 
 .size-btn:hover {
-  border-color: #667eea;
-  background: #f7fafc;
+  border-color: #ff7a00;
+  background: #fff5eb;
 }
 
 .size-btn.active {
-  background: #667eea;
+  background: #ff7a00;
   color: white;
-  border-color: #667eea;
+  border-color: #ff7a00;
 }
 
 .size-btn:disabled {
